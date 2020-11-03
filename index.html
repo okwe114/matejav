@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		body{
+			  background: linear-gradient(to right, #cc0066 0%, #3399ff 100%);
+		}
+	 .calculos{
+	 	background: #000099;
+	 	color: #f0e8e6;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 20px;
+	 	text-align: center;
+	 }
+	 h1{
+	 	text-align: center;
+	 	color: #660033;
+	 	font-size: 35px;
+	 }
+	 .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+	</style>
+</head>
+<body>
+	<article>
+	<h1>CALCULO CON LOGARITMO Y COSENO</h1>
+	
+	
+		<img src="zo.jpg"  class="center">
+<script  type="text/javascript" >
+
+	var t=prompt("introducir valor para calcular: 1ro con logaritmo y 2do con coseno ")
+	var a=Math.log(Math.abs((Math.pow(t,2)-Math.pow(t,3))))
+	var round = Math.round(a * 100) / 100;
+
+    var divisionResult = (75/(2*t));
+    var degreesResult = (0.8*t)-3;
+    var radiansConvertion =  degreesResult * Math.PI / 180;
+    var cosResult = Math.cos(radiansConvertion);
+    var resultB = divisionResult*cosResult;
+    var roundResult = Math.round(resultB * 100) / 100;
+	document.write("<div class=calculos> para el calculo con logaritmo:"+round+" </div>")
+	document.write("<div class=calculos> para el calculo con coseno:"+roundResult+" </div>")
+	</script>
+	<h1>CALCULO CON SUMA DE CUADRADOS Y RAICES</h1>
+		<img src="bru.jpg"  class="center">
+<script  type="text/javascript" >
+
+
+    var x=prompt("introducir valor x para calcular: 1ro con suma de cuadrados y 2do con raices")
+	var y=prompt("introducir valor y para calcular: 1ro con suma de cuadrados y 2do con raices")
+	var c=Math.pow(x,2)+Math.pow(y,2)-(Math.pow(x,2)/Math.pow(y,2))
+	var yeah = Math.round(c * 100) / 100;
+	
+   var raiz1=Math.sqrt(x*y)
+			var m=parseFloat(x) + parseFloat(y)
+			var restab=raiz1-Math.sqrt(m)
+			var g= Math.pow((x-y)/(x-2*y),2)
+			var k=g-Math.sqrt(x/y)
+			var result=restab+k
+			var kilo = Math.round(result * 100) / 100;
+    document.write("<div class=calculos> para el caculo con sumas de cuadrados:"+yeah+" </div>")
+	document.write("<div class=calculos> para el caculo con raices:"+kilo+" </div>")
+	
+	</script>
+	<h1>EDAD DE TU CACHORRO</h1>
+     <img src="na.jpg"  class="center">
+	<script  type="text/javascript" >
+    var e= prompt("introducir el la edad de tu perrito")
+    var g= Math.round((16*Math.log(e)+31))
+    document.write("<div class=calculos> la edad de tu cachorro en humano seria: "+g+" </div>")
+
+
+
+</script>
+</article>	
+	
+</body>
+</html>
